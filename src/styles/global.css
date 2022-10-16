@@ -1,17 +1,14 @@
 body {
     margin: 0px;
     padding: 0px;
-}
-
-body.light-mode {
-    background-color: #fff;
     color: #333;
+    background-color: #fff;
     transition: background-color 0.3s ease;
 }
 
-body.dark-mode {
-    background-color: #1a1919;
+body.dark {
     color: #fff;
+    background-color: #1a1919;
 }
 
 .center-content {
@@ -23,4 +20,11 @@ body.dark-mode {
 
 .hide-element {
     display: none;
+}
+
+.switch-theme {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 20px;
 }

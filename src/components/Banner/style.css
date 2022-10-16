@@ -2,11 +2,9 @@
     min-height: 70vh;
     background-image: radial-gradient(circle, rgb(28 181 225) 0px, rgb(54 148 228) 100%);
     position: relative;
-    /* night mode */
-    /* background-image: radial-gradient(circle, rgb(32, 32, 71) 0px, rgb(2, 9, 23) 100%); */
     color: white;
 }
-body.dark-mode .banner-container {
+body.dark .banner-container {
     background-image: radial-gradient(circle, rgb(27, 27, 54) 0px, rgb(2, 9, 23) 100%);
 }
 .plan-img {
@@ -19,6 +17,10 @@ body.dark-mode .banner-container {
     height: 300px;
     position: absolute;
 }
+body.dark .cloud-img {
+    display: none;
+}
+
 .cloud-1 {
     top: 0px;
     left: 80px

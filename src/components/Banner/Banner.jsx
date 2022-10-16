@@ -1,21 +1,17 @@
 import React, { useEffect, useRef } from 'react'
-import useDarkMode from 'use-dark-mode';
 import './style.css'
 import PlanGif from '../../assets/images/plan.gif'
 import CloudImg from '../../assets/images/cloud.png'
-import ThemeToggler from '../ThemeToggler/ThemeToggler';
 
 export default function Banner() {
     const subTitleRef = useRef()
     const blinkingCursorRef = useRef()
     const intervalRef = useRef()
-    const darkMode = useDarkMode()
 
     useEffect(() => {
         startTypingTitle()
         return () => clearInterval(intervalRef.current)
     },[])
-
     const startTypingTitle = () => {
         const sentence = '> A SOFTWARE ENGINEER'
         let currentIndex = 0
@@ -34,16 +30,12 @@ export default function Banner() {
             blinkingCursorRef.current.classList.toggle('hide-element')
         }, 500)
     }
-
     return (
         <div className='banner-container center-content'>
-            <ThemeToggler />
-            <img src={PlanGif} className='plan-img' />
-            {!darkMode.value && <>
-                <img src={CloudImg} className='cloud-img cloud-1' />
-                <img src={CloudImg} className='cloud-img cloud-2' />
-                <img src={CloudImg} className='cloud-img cloud-3' />
-            </>}
+            <img src={PlanGif} className='plan-img' alt='plan-img' />
+            <img src={CloudImg} className='cloud-img cloud-1' alt='cloud-img' />
+            <img src={CloudImg} className='cloud-img cloud-2' alt='cloud-img' />
+            <img src={CloudImg} className='cloud-img cloud-3' alt='cloud-img' />
             <h1 className='title'>Zuhair Naqi</h1>
             <div className='sub-title-container'>
                 <h1 className='sub-title' ref={subTitleRef}></h1>
