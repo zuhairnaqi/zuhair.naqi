@@ -9,8 +9,8 @@ export default function AboutMe() {
         <img src={ProfileImg} className="profile-img" alt="profile-img" />
       </div>
       <div>
-        <h2 className="heading">About Me</h2>
-        <p className="me-description">
+        <h2 className="heading-2">About Me</h2>
+        <p className="large-text">
           Hi I'm Zuhair Naqi, a passionate Software Engineer and an Open Source
           Contributor for Web and Mobile Apps, mainly Javascript ♥
         </p>

@@ -11,6 +11,10 @@ body.dark {
     background-color: #1a1919;
 }
 
+a {
+    color: unset;
+}
+
 .center-content {
     display: flex;
     flex-direction: column;
@@ -27,4 +31,23 @@ body.dark {
     z-index: 1;
     right: 10px;
     top: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Typography */
+.heading-2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.large-text {
+    font-size: 18px;
+    font-family: monospace;
 }
