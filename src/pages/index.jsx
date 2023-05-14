@@ -8,7 +8,6 @@ import GitHubIcon from "@mui/icons-material/GitHub"
 import MailOutlineIcon from "@mui/icons-material/MailOutline"
 import { Grid, Divider, Box, Button } from "@mui/material"
 import { socialProfileLinks } from "../constants/info"
-import ResumeFile from "../assets/files/resume.pdf"
 
 export function Head() {
   return <title>Zuhair Naqi | Portfolio</title>
