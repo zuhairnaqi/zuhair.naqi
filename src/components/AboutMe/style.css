@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 100px 20%;
 }
 .me-left-container {
     display: flex;
@@ -14,4 +13,22 @@
     width: 210px;
     height: 200px;
     border-radius: 10px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+    .me-container {
+        flex-direction: column;
+    }
+    .me-left-container {
+        margin-right: 0px;
+    }
+    .me-container .heading-3{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .me-container .large-text{
+        text-align: center;
+    }
 }

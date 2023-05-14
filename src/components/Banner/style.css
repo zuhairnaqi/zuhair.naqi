@@ -48,3 +48,28 @@ body.dark .cloud-img {
 .sub-title {
     font-family: monospace;
 }
+
+@media screen and (max-width: 1200px) {
+    .cloud-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+    .banner-container {
+        min-height: 60vh;
+    }
+    .cloud-img {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+    .plan-img {
+        width: 240px;
+        height: 160px;
+    }
+}

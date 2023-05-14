@@ -5,8 +5,10 @@ import "../styles/global.css"
 import ThemeToggler from "../components/ThemeToggler/ThemeToggler"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import GitHubIcon from "@mui/icons-material/GitHub"
-import { Grid, Icon } from "@mui/material"
+import MailOutlineIcon from "@mui/icons-material/MailOutline"
+import { Grid, Divider, Box, Button } from "@mui/material"
 import { socialProfileLinks } from "../constants/info"
+import ResumeFile from "../assets/files/resume.pdf"
 
 export function Head() {
   return <title>Zuhair Naqi | Portfolio</title>
@@ -16,11 +18,21 @@ export default function Home() {
   return (
     <div>
       <div className="switch-theme">
+        <Button variant="outlined" className="resume-button">
+          <a href={'../Zuhair_Naqi_Resume.pdf'} target="_blank" rel="noopener noreferrer" className="no-underline">
+            Resume
+          </a>
+        </Button>
         <ThemeToggler />
       </div>
       <Banner />
-      <AboutMe />
       <section>
+        <AboutMe />
+      </section>
+      <Box mx={10}>
+        <Divider light/>
+      </Box>
+      <section className="footer-section">
         <h2 className="heading-2">Reach out to me!</h2>
         <p className="large-text">
           Discuss a project or just want to say hi? I'm just one click away
@@ -34,7 +46,7 @@ export default function Home() {
               label="button"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon color="primary" />
+              <LinkedInIcon color="primary" fontSize="large" />
             </a>
           </Grid>
           <Grid item>
@@ -45,7 +57,18 @@ export default function Home() {
               label="button"
               rel="noopener noreferrer"
             >
-              <GitHubIcon />
+              <GitHubIcon fontSize="large" />
+            </a>
+          </Grid>
+          <Grid item>
+            <a
+              href={socialProfileLinks.MAIL}
+              aria-label={socialProfileLinks.MAIL}
+              target="_blank"
+              label="button"
+              rel="noopener noreferrer"
+            >
+              <MailOutlineIcon fontSize="large" color="warning" />
             </a>
           </Grid>
         </Grid>
